@@ -1,0 +1,4 @@
+node_base_image: 18-alpine
+published_port:
+target_port: 3300
+docker_context: PM-BE-PRODUCTION
