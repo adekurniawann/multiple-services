@@ -23,18 +23,18 @@ jobs:
       cr_username: ${{ secrets.CR_USERNAME }}
       cr_token: ${{ secrets.CR_TOKEN }}
 
-  staging:
-    needs: docker
-    if: (github.event.base_ref == 'refs/heads/staging') && (endsWith(github.event.ref, 'staging'))
-    uses: adekurniawann/dry-workflows/.github/workflows/swarm-deploy.yml@latest
-    secrets:
-      cr_username: ${{ secrets.CR_USERNAME }}
-      cr_token: ${{ secrets.CR_TOKEN }}
+  # staging:
+  #   needs: docker
+  #   if: (github.event.base_ref == 'refs/heads/staging') && (endsWith(github.event.ref, 'staging'))
+  #   uses: adekurniawann/dry-workflows/.github/workflows/swarm-deploy.yml@latest
+  #   secrets:
+  #     cr_username: ${{ secrets.CR_USERNAME }}
+  #     cr_token: ${{ secrets.CR_TOKEN }}
 
-  production:
-    needs: docker
-    if: (github.event.base_ref == 'refs/heads/production') && (endsWith(github.event.ref, 'prod'))
-    uses: adekurniawann/dry-workflows/.github/workflows/swarm-deploy.yml@latest
-    secrets:
-      cr_username: ${{ secrets.CR_USERNAME }}
-      cr_token: ${{ secrets.CR_TOKEN }}
+  # production:
+  #   needs: docker
+  #   if: (github.event.base_ref == 'refs/heads/production') && (endsWith(github.event.ref, 'prod'))
+  #   uses: adekurniawann/dry-workflows/.github/workflows/swarm-deploy.yml@latest
+  #   secrets:
+  #     cr_username: ${{ secrets.CR_USERNAME }}
+  #     cr_token: ${{ secrets.CR_TOKEN }}
