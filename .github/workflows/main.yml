@@ -6,8 +6,12 @@ on:
       - v*-service-a-dev
       - v*-service-b-dev
       - v*-service-c-dev
-      - v*-staging
-      - v*-prod
+      - v*-service-a-staging
+      - v*-service-b-staging
+      - v*-service-c-staging
+      - v*-service-a-prod
+      - v*-service-b-prod
+      - v*-service-c-prod
 
 jobs:
   
