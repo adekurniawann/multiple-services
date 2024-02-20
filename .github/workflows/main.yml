@@ -3,9 +3,9 @@ name: Deploy
 on:
   push:
     tags:
-      - v*-dev-service-a
-      - v*-dev-service-b
-      - v*-dev-service-c
+      - v*-service-a-dev
+      - v*-service-b-dev
+      - v*-service-c-dev
       - v*-staging
       - v*-prod
 
